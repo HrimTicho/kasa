@@ -1,0 +1,34 @@
+header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 25px;
+
+    img{
+        margin-right: auto;
+    }
+
+    nav {
+        margin-left: auto;
+    }
+
+    ul{
+        display: flex;
+
+        li{
+            list-style-type: none;
+            padding-left: 50px;
+
+            a{
+                text-decoration: none;
+                font-family: Montserrat;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 34px;
+                letter-spacing: 0em;
+                text-align: right;
+                color: #FF6060;
+            }
+        }
+    }
+}
