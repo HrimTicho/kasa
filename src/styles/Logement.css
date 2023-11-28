@@ -19,4 +19,41 @@
      object-position: center;
   left: 0%;
   transition: left 500ms linear;
+  border-radius: 25px;
+}
+
+.Descr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  grid-column-gap: 25px;
+  grid-row-gap: 1px;
+}
+.Descr__Person {
+  text-align: right;
+}
+.Descr__Person img {
+  -webkit-clip-path: circle(60px at center);
+          clip-path: circle(60px at center);
+}
+.Descr__Rating {
+  text-align: right;
+}
+.Descr__Tags {
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  padding-left: 0;
+}
+.Descr__Tags span {
+  border-radius: 10px;
+  background-color: #FF6060;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  padding: 5px 15px 5px 15px;
 }/*# sourceMappingURL=Logement.css.map */

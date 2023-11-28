@@ -1,0 +1,27 @@
+.Drop {
+  border-radius: 10px;
+  background-color: #F6F6F6;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FF6060;
+}
+.Drop span {
+  display: block;
+  margin: 0;
+  max-width: 100%;
+  background-color: #FF6060;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+  color: white;
+}
+.Drop p {
+  padding: 10px 15px 10px 15px;
+}
+.Drop ul {
+  list-style: none;
+  padding: 10px 15px 10px 15px;
+}/*# sourceMappingURL=Drop_Info.css.map */
