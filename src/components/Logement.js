@@ -11,6 +11,20 @@ function Logement() {
     const {id} = useParams();
     const _L = DATAS.find(DATAS => DATAS.id === id);
 
+    if(!_L){
+        return(
+            <div>
+            <Header />
+            <main>
+                <div>
+                    Logement inconnu
+                </div>
+            </main>
+            <Footer />
+        </div>
+        )
+    }
+
     return (
         <div>
             <Header />
