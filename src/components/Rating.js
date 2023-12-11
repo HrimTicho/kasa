@@ -6,7 +6,7 @@ function Rating({_note}) {
     const range = [1, 2, 3, 4, 5];
 
 	return (
-		<div>
+		<div className='star'>
 			{range.map((n) =>
 				_note >= n ? (
 					<img src={star_p} key={n.toString()} alt='star' />

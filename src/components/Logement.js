@@ -5,6 +5,7 @@ import Rating from './Rating';
 import Drop_Info from './Drop_Info';
 import DATAS from '../datas/logements.json';
 import { useParams } from 'react-router-dom';
+import {useState, useEffect} from 'react'
 
 function Logement() {
 
@@ -41,10 +42,10 @@ function Logement() {
                             {_L.location}
                         </p>
                     </div>
-                    <p className='Descr__Person'>
-                        {_L.host.name}
+                    <div className='Descr__Person'>
+                        <p>{_L.host.name}</p>
                         <img src={_L.host.picture} alt="avatar" />
-                    </p>
+                    </div>
                     <ul className='Descr__Tags'>
                         {_L.tags.map((n) => (
                             <span key={id} >{n}</span>

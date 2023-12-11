@@ -9,7 +9,7 @@
     letter-spacing: 0em;
     text-align: left;
     color : #FF6060;
-    span{
+    /*span{
         display: block;
         margin: 0;
         max-width: 100%;
@@ -17,7 +17,7 @@
         border-radius: 5px;
         padding : 10px 15px 10px 15px;
         color: white;
-    }
+    }*/
 
     p{
         padding : 10px 15px 10px 15px;
@@ -28,8 +28,23 @@
         padding : 10px 15px 10px 15px;
     }
 
+    &__Top{
+        display: flex;
+        max-width: 100%;
+        background-color: #FF6060;
+        border-radius: 5px;
+        padding : 10px 15px 10px 15px;
+        color: white;
+        align-items: center;
+
+        img{
+            width: 24px;
+            height: 13px;
+            margin-left: auto;
+        }
+    }
+
     /*&__Content{
-        height: 0px;
-        overflow: hidden;
+        
     }*/
 }

@@ -7,6 +7,7 @@
   min-height: 415px;
   position: relative;
   overflow: hidden;
+  margin-top: 50px;
 }
 .slider img {
   position: absolute;
@@ -37,13 +38,15 @@
           clip-path: circle(60px at center);
 }
 .Descr__Rating {
-  text-align: right;
+  padding-top: 10px;
+  margin-left: auto;
 }
 .Descr__Tags {
   margin: 0;
   display: flex;
   gap: 15px;
   padding-left: 0;
+  margin-bottom: 25px;
 }
 .Descr__Tags span {
   border-radius: 10px;
@@ -56,4 +59,37 @@
   text-align: center;
   color: white;
   padding: 5px 15px 5px 15px;
+}
+.Descr__Titre {
+  letter-spacing: 0em;
+  font-family: Montserrat;
+  color: #FF6060;
+  text-align: left;
+}
+.Descr__Titre h2 {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 500;
+  margin: 0px;
+  margin-top: 25px;
+}
+.Descr__Titre p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  margin: 0px;
+}
+.Descr__Person {
+  display: flex;
+  margin-left: auto;
+  margin-top: 25px;
+}
+.Descr__Person p {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #FF6060;
 }/*# sourceMappingURL=Logement.css.map */

@@ -8,19 +8,18 @@
   letter-spacing: 0em;
   text-align: left;
   color: #FF6060;
-  /*&__Content{
-      height: 0px;
-      overflow: hidden;
+  /*span{
+      display: block;
+      margin: 0;
+      max-width: 100%;
+      background-color: #FF6060;
+      border-radius: 5px;
+      padding : 10px 15px 10px 15px;
+      color: white;
   }*/
-}
-.Drop span {
-  display: block;
-  margin: 0;
-  max-width: 100%;
-  background-color: #FF6060;
-  border-radius: 5px;
-  padding: 10px 15px 10px 15px;
-  color: white;
+  /*&__Content{
+
+  }*/
 }
 .Drop p {
   padding: 10px 15px 10px 15px;
@@ -28,4 +27,18 @@
 .Drop ul {
   list-style: none;
   padding: 10px 15px 10px 15px;
+}
+.Drop__Top {
+  display: flex;
+  max-width: 100%;
+  background-color: #FF6060;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+  color: white;
+  align-items: center;
+}
+.Drop__Top img {
+  width: 24px;
+  height: 13px;
+  margin-left: auto;
 }/*# sourceMappingURL=Drop_Info.css.map */

@@ -1,1 +1,4 @@
-/*# sourceMappingURL=Ratings.css.map */
+.star {
+  display: flex;
+  gap: 10px;
+}/*# sourceMappingURL=Ratings.css.map */
