@@ -3,9 +3,8 @@ import {useState, useEffect} from 'react'
 import arrow_H from '../assets/Vector_H.png'
 import arrow_B from '../assets/Vector_B.png'
 
-function Drop_Info({_info}) {
-    const checkArray = Array.isArray(_info);
-    const title = checkArray ? 'Equipements' : 'Description';
+function Drop_Info({info, name}) {
+    const checkArray = Array.isArray(info);
     const [checkOpen, setCheckOpen] = useState(false);
 
 
@@ -15,7 +14,7 @@ function Drop_Info({_info}) {
                 checkOpen ? setCheckOpen(false)
                 : setCheckOpen(true)
             } className='Drop__Top'>
-                <span>{title}</span>
+                <span>{name}</span>
                 <img src={
                     checkOpen ? arrow_H : arrow_B
                     } alt='fleche' />
@@ -24,12 +23,12 @@ function Drop_Info({_info}) {
                 <div className='Drop__Content'>
                 {checkArray ? 
                     <ul>
-                        {_info.map((n) =>(
+                        {info.map((n) =>(
                             <li>{n}</li>
                         ))}
                     </ul> : 
                     <p>
-                        {_info}
+                        {info}
                     </p>
                 }
                 </div>

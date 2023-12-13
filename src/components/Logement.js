@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Rating from './Rating';
 import Drop_Info from './Drop_Info';
+import Slider from './Slider';
 import DATAS from '../datas/logements.json';
 import { useParams } from 'react-router-dom';
 import {useState, useEffect} from 'react'
@@ -30,10 +31,8 @@ function Logement() {
         <div>
             <Header />
             <main>
-                <div className='slider'>
-                    {_L.pictures.map((n) => (
-                        <img src={n} alt='img' />
-                    ))}
+                <div className='slider_bloc'>
+                    <Slider img={_L.pictures} />
                 </div>
                 <div className='Descr'>
                     <div className='Descr__Titre'>
@@ -52,13 +51,13 @@ function Logement() {
                         ))}
                     </ul>
                     <div className='Descr__Rating'>
-                        <Rating _note={_L.rating} />
+                        <Rating note={_L.rating} />
                     </div>
                     <div className='Descr__Description'>
-                        <Drop_Info _info={_L.description} />
+                        <Drop_Info name={'Description'} info={_L.description} />
                     </div>
                     <div className='Descr__Equipement'>
-                        <Drop_Info _info={_L.equipments} />
+                        <Drop_Info name={'Équipements'} info={_L.equipments} />
                     </div>
                 </div>
             </main>

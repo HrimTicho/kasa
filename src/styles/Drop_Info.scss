@@ -9,15 +9,8 @@
     letter-spacing: 0em;
     text-align: left;
     color : #FF6060;
-    /*span{
-        display: block;
-        margin: 0;
-        max-width: 100%;
-        background-color: #FF6060;
-        border-radius: 5px;
-        padding : 10px 15px 10px 15px;
-        color: white;
-    }*/
+
+    user-select: none;
 
     p{
         padding : 10px 15px 10px 15px;
@@ -41,6 +34,10 @@
             width: 24px;
             height: 13px;
             margin-left: auto;
+        }
+
+        &:hover{
+            cursor: pointer;
         }
     }
 

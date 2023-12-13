@@ -1,7 +1,19 @@
+import '../styles/Error.css';
+import Header from './Header';
+import Footer from './Footer';
+
 function Error() {
     return (
         <div>
-            <h1>Cette page n'existe pas</h1>
+            <Header />
+            <main>
+            <div className='error'>
+                <h1>404</h1>
+                <p>Oups! La page que vous demandez n'existe pas.</p>
+                <a href="/">Retourner sur la page d'accueil</a>
+            </div>
+            </main>
+            <Footer />
         </div>
     )
 }
