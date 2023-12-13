@@ -3,6 +3,7 @@
   max-height: 415px;
   min-height: 415px;
   position: relative;
+  margin-top: 25px;
 }
 .slider img {
   width: 100%;

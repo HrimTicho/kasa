@@ -45,11 +45,11 @@ function Logement() {
                         <p>{_L.host.name}</p>
                         <img src={_L.host.picture} alt="avatar" />
                     </div>
-                    <ul className='Descr__Tags'>
-                        {_L.tags.map((n) => (
-                            <span key={id} >{n}</span>
+                    <div className='Descr__Tags'>
+                        {_L.tags.map((n, index) => (
+                            <span key={id+index} >{n}</span>
                         ))}
-                    </ul>
+                    </div>
                     <div className='Descr__Rating'>
                         <Rating note={_L.rating} />
                     </div>

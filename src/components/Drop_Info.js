@@ -23,8 +23,8 @@ function Drop_Info({info, name}) {
                 <div className='Drop__Content'>
                 {checkArray ? 
                     <ul>
-                        {info.map((n) =>(
-                            <li>{n}</li>
+                        {info.map((n, index) =>(
+                            <li key={n+index}>{n}</li>
                         ))}
                     </ul> : 
                     <p>

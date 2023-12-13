@@ -9,7 +9,7 @@ function Card({_id, _cover, _titre}) {
     }
 
     return (
-        <figure key={_id} onClick={route}>
+        <figure onClick={route}>
             <div></div>
             <img src={_cover} alt='' />
             <figcaption>

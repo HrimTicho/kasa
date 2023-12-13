@@ -16,7 +16,8 @@ function Home() {
             </div>
             <div className='card_list'>
                 {DATAS.map(({id, cover, title}) => (
-                    <Card 
+                    <Card
+                    key={id} 
                     _id={id} 
                     _cover={cover} 
                     _titre={title} />
