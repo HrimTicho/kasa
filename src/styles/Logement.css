@@ -3,31 +3,60 @@
   max-height: 415px;
   min-height: 415px;
 }
+@media (max-width: 767.98px) {
+  .slider_bloc {
+    max-height: 255px;
+    min-height: 255px;
+  }
+}
 
 .Descr {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto;
-  grid-column-gap: 25px;
-  grid-row-gap: 1px;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 0;
+  height: 100%;
 }
-.Descr__Person {
-  text-align: right;
-}
-.Descr__Person img {
-  -webkit-clip-path: circle(60px at center);
-          clip-path: circle(60px at center);
+@media (max-width: 767.98px) {
+  .Descr {
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 50% 50%;
+  }
 }
 .Descr__Rating {
+  grid-row-start: 2;
+  grid-column-start: 3;
+  grid-row-end: 3;
+  grid-column-end: 5;
   padding-top: 10px;
   margin-left: auto;
 }
+@media (max-width: 767.98px) {
+  .Descr__Rating {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 2;
+  }
+}
 .Descr__Tags {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 3;
   margin: 0;
   display: flex;
   gap: 15px;
   padding-left: 0;
   margin-bottom: 25px;
+}
+@media (max-width: 767.98px) {
+  .Descr__Tags {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 3;
+  }
 }
 .Descr__Tags span {
   border-radius: 10px;
@@ -42,10 +71,22 @@
   padding: 5px 15px 5px 15px;
 }
 .Descr__Titre {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 4;
   letter-spacing: 0em;
   font-family: Montserrat;
   color: #FF6060;
   text-align: left;
+}
+@media (max-width: 767.98px) {
+  .Descr__Titre {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 3;
+  }
 }
 .Descr__Titre h2 {
   font-size: 36px;
@@ -53,8 +94,11 @@
   font-weight: 500;
   margin: 0px;
   margin-top: 25px;
-  /*white-space: nowrap;
-  overflow: visible;*/
+}
+@media (max-width: 767.98px) {
+  .Descr__Titre h2 {
+    font-size: 18px;
+  }
 }
 .Descr__Titre p {
   font-size: 18px;
@@ -62,10 +106,28 @@
   font-weight: 500;
   margin: 0px;
 }
+@media (max-width: 767.98px) {
+  .Descr__Titre p {
+    font-size: 14px;
+  }
+}
 .Descr__Person {
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-row-end: 2;
+  grid-column-end: 5;
   display: flex;
   margin-left: auto;
   margin-top: 25px;
+  text-align: right;
+}
+@media (max-width: 767.98px) {
+  .Descr__Person {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 2;
+  }
 }
 .Descr__Person p {
   font-family: Montserrat;
@@ -75,4 +137,52 @@
   letter-spacing: 0em;
   text-align: right;
   color: #FF6060;
+}
+@media (max-width: 767.98px) {
+  .Descr__Person p {
+    font-size: 12px;
+  }
+}
+.Descr__Person img {
+  -webkit-clip-path: circle(60px at center);
+          clip-path: circle(60px at center);
+}
+@media (max-width: 767.98px) {
+  .Descr__Person img {
+    width: 32px;
+    height: 32px;
+    -webkit-clip-path: circle(16px at center);
+            clip-path: circle(16px at center);
+  }
+}
+.Descr__Description {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 3;
+  width: 95%;
+}
+@media (max-width: 767.98px) {
+  .Descr__Description {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-column-end: 3;
+  }
+}
+.Descr__Equipement {
+  grid-row-start: 3;
+  grid-column-start: 3;
+  grid-row-end: 4;
+  grid-column-end: 5;
+  width: 95%;
+  margin-left: auto;
+}
+@media (max-width: 767.98px) {
+  .Descr__Equipement {
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-row-end: 6;
+    grid-column-end: 3;
+  }
 }/*# sourceMappingURL=Logement.css.map */

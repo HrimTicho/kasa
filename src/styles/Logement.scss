@@ -2,28 +2,57 @@
 	width: 100%;
 	max-height: 415px;
     min-height: 415px;
+
+    @media (max-width: 767.98px) {
+        max-height: 255px;
+        min-height: 255px;
+    }
 }
 
 .Descr{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-    grid-column-gap: 25px;
-    grid-row-gap: 1px;
+    display: grid; 
 
-    &__Person{
-        text-align: right;
-        img{
-            clip-path: circle(60px at center);
-        }
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    
+    gap: 0;
+    height: 100%;
+
+    @media (max-width: 767.98px) {
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: 50% 50%;
     }
 
     &__Rating{
+        grid-row-start: 2;
+        grid-column-start: 3;
+        grid-row-end: 3;
+        grid-column-end: 5;
+
+        @media (max-width: 767.98px) {
+            grid-row-start: 3;
+            grid-column-start: 1;
+            grid-row-end: 4;
+            grid-column-end: 2;
+        }
+
         padding-top: 10px;
         margin-left: auto;
     }
 
     &__Tags{
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-row-end: 3;
+        grid-column-end: 3;
+
+        @media (max-width: 767.98px) {
+            grid-row-start: 2;
+            grid-column-start: 1;
+            grid-row-end: 3;
+            grid-column-end: 3;
+        }
+
         margin: 0;
         display: flex;
         gap: 15px;
@@ -44,6 +73,18 @@
     }
 
     &__Titre {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 2;
+        grid-column-end: 4;
+
+        @media (max-width: 767.98px) {
+            grid-row-start: 1;
+            grid-column-start: 1;
+            grid-row-end: 2;
+            grid-column-end: 3;
+        }
+
         letter-spacing: 0em;
         font-family: Montserrat;
         
@@ -56,8 +97,9 @@
             font-weight: 500;
             margin: 0px;
             margin-top: 25px;
-            /*white-space: nowrap;
-            overflow: visible;*/
+            @media (max-width: 767.98px) {
+                font-size: 18px;
+            }
         }
 
         p{
@@ -65,11 +107,27 @@
             line-height: 26px;
             font-weight: 500;
             margin: 0px;
+
+            @media (max-width: 767.98px) {
+                font-size: 14px;
+            }
         }
         
     }
 
     &__Person{
+        grid-row-start: 1;
+        grid-column-start: 4;
+        grid-row-end: 2;
+        grid-column-end: 5;
+
+        @media (max-width: 767.98px) {
+            grid-row-start: 3;
+            grid-column-start: 2;
+            grid-row-end: 4;
+            grid-column-end: 2;
+        }
+
         display: flex;
         margin-left: auto;
         margin-top: 25px;
@@ -81,10 +139,53 @@
             letter-spacing: 0em;
             text-align: right;
             color: #FF6060;
+
+            @media (max-width: 767.98px) {
+                font-size: 12px;
+            }
+        }
+
+        text-align: right;
+        img{
+            clip-path: circle(60px at center);
+
+            @media (max-width: 767.98px) {
+                width: 32px;
+                height: 32px;
+                clip-path: circle(16px at center);
+            }
         }
     }
 
     &__Description{
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-row-end: 4;
+        grid-column-end: 3;
 
+        @media (max-width: 767.98px) {
+            grid-row-start: 4;
+            grid-column-start: 1;
+            grid-row-end: 5;
+            grid-column-end: 3;
+        }
+
+        width: 95%;
+    }
+
+    &__Equipement {
+        grid-row-start: 3;
+        grid-column-start: 3;
+        grid-row-end: 4;
+        grid-column-end: 5;  
+
+        @media (max-width: 767.98px) {
+            grid-row-start: 5;
+            grid-column-start: 1;
+            grid-row-end: 6;
+            grid-column-end: 3;
+        }
+        width: 95%;
+        margin-left: auto;
     }
 }

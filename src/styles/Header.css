@@ -3,19 +3,45 @@ header {
   width: 90%;
   margin: auto;
   padding-top: 25px;
+  overflow: hidden;
+}
+@media (max-width: 767.98px) {
+  header {
+    margin: auto;
+    padding: 0px;
+    padding-top: 15px;
+    gap: 15px;
+  }
 }
 header img {
   margin-right: auto;
 }
+@media (max-width: 767.98px) {
+  header img {
+    height: 47px;
+  }
+}
 header nav {
   margin-left: auto;
+}
+@media (max-width: 767.98px) {
+  header nav {
+    margin: auto;
+  }
 }
 header ul {
   display: flex;
 }
+@media (max-width: 767.98px) {
+  header ul {
+    margin: 0px;
+    padding: 0px;
+    gap: 15px;
+  }
+}
 header ul li {
   list-style-type: none;
-  padding-left: 50px;
+  padding-left: 15px;
 }
 header ul li a {
   text-decoration: none;
@@ -26,4 +52,10 @@ header ul li a {
   letter-spacing: 0em;
   text-align: right;
   color: #FF6060;
+}
+@media (max-width: 767.98px) {
+  header ul li a {
+    font-size: 12px;
+    line-height: 17px;
+  }
 }/*# sourceMappingURL=Header.css.map */

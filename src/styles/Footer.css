@@ -18,4 +18,11 @@ footer p {
   line-height: 34px;
   letter-spacing: 0em;
   padding-bottom: 25px;
+}
+@media (max-width: 767.98px) {
+  footer p {
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=Footer.css.map */
