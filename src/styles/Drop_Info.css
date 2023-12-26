@@ -15,6 +15,11 @@
 
   }*/
 }
+@media (max-width: 767.98px) {
+  .Drop {
+    font-size: 13px;
+  }
+}
 .Drop p {
   padding: 10px 15px 10px 15px;
 }
@@ -31,10 +36,21 @@
   color: white;
   align-items: center;
 }
+@media (max-width: 767.98px) {
+  .Drop__Top {
+    padding: 0px 5px 0px 5px;
+  }
+}
 .Drop__Top img {
   width: 24px;
   height: 13px;
   margin-left: auto;
+}
+@media (max-width: 767.98px) {
+  .Drop__Top img {
+    width: 16px;
+    height: 9px;
+  }
 }
 .Drop__Top:hover {
   cursor: pointer;

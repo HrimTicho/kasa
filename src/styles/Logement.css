@@ -37,6 +37,7 @@
     grid-column-start: 1;
     grid-row-end: 4;
     grid-column-end: 2;
+    width: 100%;
   }
 }
 .Descr__Tags {
@@ -44,6 +45,8 @@
   grid-column-start: 1;
   grid-row-end: 3;
   grid-column-end: 3;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   display: flex;
   gap: 15px;
@@ -56,6 +59,7 @@
     grid-column-start: 1;
     grid-row-end: 3;
     grid-column-end: 3;
+    margin-bottom: 5px;
   }
 }
 .Descr__Tags span {
@@ -69,6 +73,11 @@
   text-align: center;
   color: white;
   padding: 5px 15px 5px 15px;
+}
+@media (max-width: 767.98px) {
+  .Descr__Tags span {
+    padding: 2px 15px 2px 15px;
+  }
 }
 .Descr__Titre {
   grid-row-start: 1;
@@ -98,6 +107,7 @@
 @media (max-width: 767.98px) {
   .Descr__Titre h2 {
     font-size: 18px;
+    line-height: 25px;
   }
 }
 .Descr__Titre p {
@@ -127,9 +137,13 @@
     grid-column-start: 2;
     grid-row-end: 4;
     grid-column-end: 2;
+    margin-top: 0px;
   }
 }
-.Descr__Person p {
+.Descr__Person__Name {
+  margin: auto;
+}
+.Descr__Person__Name p {
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 500;
@@ -137,10 +151,13 @@
   letter-spacing: 0em;
   text-align: right;
   color: #FF6060;
+  margin: 0px;
+  padding-right: 5px;
 }
 @media (max-width: 767.98px) {
-  .Descr__Person p {
+  .Descr__Person__Name p {
     font-size: 12px;
+    line-height: 17px;
   }
 }
 .Descr__Person img {
@@ -168,6 +185,10 @@
     grid-column-start: 1;
     grid-row-end: 5;
     grid-column-end: 3;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
   }
 }
 .Descr__Equipement {
@@ -184,5 +205,7 @@
     grid-column-start: 1;
     grid-row-end: 6;
     grid-column-end: 3;
+    margin: auto;
+    width: 100%;
   }
 }/*# sourceMappingURL=Logement.css.map */

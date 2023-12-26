@@ -10,7 +10,7 @@ header {
     margin: auto;
     padding: 0px;
     padding-top: 15px;
-    gap: 15px;
+    gap: 0px;
   }
 }
 header img {
@@ -36,7 +36,7 @@ header ul {
   header ul {
     margin: 0px;
     padding: 0px;
-    gap: 15px;
+    gap: 0px;
   }
 }
 header ul li {
@@ -57,5 +57,6 @@ header ul li a {
   header ul li a {
     font-size: 12px;
     line-height: 17px;
+    text-transform: uppercase;
   }
 }/*# sourceMappingURL=Header.css.map */

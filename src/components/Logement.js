@@ -12,6 +12,9 @@ function Logement() {
 
     const {id} = useParams();
     const _L = DATAS.find(DATAS => DATAS.id === id);
+    const userName = _L.host.name.split(' ');
+
+    
 
     if(!_L){
         return(
@@ -42,7 +45,11 @@ function Logement() {
                         </p>
                     </div>
                     <div className='Descr__Person'>
-                        <p>{_L.host.name}</p>
+                        <div className='Descr__Person__Name'>
+                        {userName.map((n, index) => (
+                            <p key={id+index} >{n}</p>
+                        ))}
+                        </div>
                         <img src={_L.host.picture} alt="avatar" />
                     </div>
                     <div className='Descr__Tags'>

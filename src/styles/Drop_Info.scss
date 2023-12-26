@@ -12,6 +12,10 @@
 
     user-select: none;
 
+    @media (max-width: 767.98px) {
+        font-size: 13px;
+    }
+
     p{
         padding : 10px 15px 10px 15px;
     }
@@ -30,10 +34,19 @@
         color: white;
         align-items: center;
 
+        @media (max-width: 767.98px) {
+            padding : 0px 5px 0px 5px;
+        }
+
         img{
             width: 24px;
             height: 13px;
             margin-left: auto;
+
+            @media (max-width: 767.98px) {
+                width: 16px;
+                height: 9px;
+            }
         }
 
         &:hover{

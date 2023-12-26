@@ -5,16 +5,32 @@
   margin: 0px;
 }
 .error h1 {
+  font-family: Montserrat;
   font-size: 288px;
   font-weight: 700;
   line-height: 411px;
   margin: 0px;
+}
+@media (max-width: 767.98px) {
+  .error h1 {
+    font-size: 96px;
+    line-height: 136px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 .error p {
   font-size: 36px;
   font-weight: 500;
   line-height: 51px;
   margin: 0px;
+}
+@media (max-width: 767.98px) {
+  .error p {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
 }
 .error a {
   display: block;
@@ -25,4 +41,9 @@
   margin: 0px;
   margin-top: 70px;
   color: #FF6060;
+}
+@media (max-width: 767.98px) {
+  .error a {
+    margin-bottom: 100px;
+  }
 }/*# sourceMappingURL=Error.css.map */
