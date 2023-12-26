@@ -10,7 +10,7 @@ function Infos() {
             <Header />
             <main>
                 <div className='banner_info'>
-                    <img src={_b} alt='Blabla' />
+                    <img src={_b} alt='Banniere' />
                 </div>
                 <div className='Info_list'>
                     <Drop_Info name={'Fiabilité'} info={'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.'} />

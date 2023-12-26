@@ -7,7 +7,7 @@ function Home() {
     return (
         <main>
             <div className='banner'>
-                <img src={_b} alt='Blabla' />
+                <img src={_b} alt='banniere' />
                 <div>
                     <p>
                         Chez vous, partout et ailleurs

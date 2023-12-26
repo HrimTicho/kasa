@@ -11,7 +11,7 @@ function Card({_id, _cover, _titre}) {
     return (
         <figure onClick={route}>
             <div></div>
-            <img src={_cover} alt='' />
+            <img src={_cover} alt='cover' />
             <figcaption>
                 {_titre}
             </figcaption>
