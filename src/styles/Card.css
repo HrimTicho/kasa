@@ -5,6 +5,7 @@ figure {
   border-radius: 10px;
   flex: 1 0 30%;
   margin: 0;
+  overflow: hidden;
 }
 @media (max-width: 767.98px) {
   figure {

@@ -4,7 +4,6 @@ import arrow_H from '../assets/Vector_H.png'
 import arrow_B from '../assets/Vector_B.png'
 
 function Drop_Info({info, name}) {
-    const checkArray = Array.isArray(info);
     const [checkOpen, setCheckOpen] = useState(false);
 
 
@@ -21,7 +20,7 @@ function Drop_Info({info, name}) {
             </div>
             { checkOpen ?
                 <div className='Drop__Content'>
-                {checkArray ? 
+                {Array.isArray(info) ? 
                     <ul>
                         {info.map((n, index) =>(
                             <li key={n+index}>{n}</li>

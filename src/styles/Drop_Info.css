@@ -11,9 +11,6 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  /*&__Content{
-
-  }*/
 }
 @media (max-width: 767.98px) {
   .Drop {
