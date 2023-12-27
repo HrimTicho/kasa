@@ -1,10 +1,16 @@
 import '../styles/Header.css';
 import logo from '../assets/LOGO.png'
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
+    let nav = useNavigate();
+    const route = () =>{
+        nav(`/`);
+    }
+
     return (
         <header>
-            <img src={logo} alt='logo' />
+            <img src={logo} alt='logo' onClick={route}/>
             <nav>
                 <ul>
                 <li>

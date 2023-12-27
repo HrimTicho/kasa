@@ -15,6 +15,10 @@ header {
         @media (max-width: 767.98px) {
             height: 47px;
         }
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     nav {
@@ -48,6 +52,10 @@ header {
                     font-size: 12px;
                     line-height: 17px;
                     text-transform: uppercase;
+                }
+
+                &:hover{
+                    text-decoration: underline;
                 }
             }
         }

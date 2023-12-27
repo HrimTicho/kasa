@@ -2,19 +2,15 @@ import '../styles/Logement.css';
 import Header from './Header';
 import Footer from './Footer';
 import Rating from './Rating';
-import Drop_Info from './Drop_Info';
+import DropInfo from './DropInfo';
 import Slider from './Slider';
 import DATAS from '../datas/logements.json';
 import { useParams } from 'react-router-dom';
-import {useState, useEffect} from 'react'
 
 function Logement() {
 
     const {id} = useParams();
     const _L = DATAS.find(DATAS => DATAS.id === id);
-    const userName = _L.host.name.split(' ');
-
-    
 
     if(!_L){
         return(
@@ -29,6 +25,8 @@ function Logement() {
         </div>
         )
     }
+
+    const userName = _L.host.name.split(' ');
 
     return (
         <div>
@@ -61,10 +59,10 @@ function Logement() {
                         <Rating note={_L.rating} />
                     </div>
                     <div className='Descr__Description'>
-                        <Drop_Info name={'Description'} info={_L.description} />
+                        <DropInfo name={'Description'} info={_L.description} />
                     </div>
                     <div className='Descr__Equipement'>
-                        <Drop_Info name={'Équipements'} info={_L.equipments} />
+                        <DropInfo name={'Équipements'} info={_L.equipments} />
                     </div>
                 </div>
             </main>

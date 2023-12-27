@@ -21,6 +21,9 @@ header img {
     height: 47px;
   }
 }
+header img:hover {
+  cursor: pointer;
+}
 header nav {
   margin-left: auto;
 }
@@ -59,4 +62,7 @@ header ul li a {
     line-height: 17px;
     text-transform: uppercase;
   }
+}
+header ul li a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=Header.css.map */

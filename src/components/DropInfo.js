@@ -1,9 +1,9 @@
 import '../styles/Drop_Info.css';
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import arrow_H from '../assets/Vector_H.png'
 import arrow_B from '../assets/Vector_B.png'
 
-function Drop_Info({info, name}) {
+function DropInfo({info, name}) {
     const [checkOpen, setCheckOpen] = useState(false);
 
 
@@ -38,5 +38,5 @@ function Drop_Info({info, name}) {
 
 
   
-  export default Drop_Info;
+  export default DropInfo;
   

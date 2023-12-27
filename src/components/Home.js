@@ -1,19 +1,13 @@
 import '../styles/Home.css';
 import _b from '../assets/banner.png';
+import Banner from './Banner';
 import Card from './Card';
 import DATAS from '../datas/logements.json';
 
 function Home() {
     return (
         <main>
-            <div className='banner'>
-                <img src={_b} alt='banniere' />
-                <div>
-                    <p>
-                        Chez vous, partout et ailleurs
-                    </p>
-                </div>
-            </div>
+            <Banner _img={_b} _text={'Chez vous, partout et ailleurs'} />
             <div className='card_list'>
                 {DATAS.map(({id, cover, title}) => (
                     <Card
